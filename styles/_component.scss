@@ -1,0 +1,123 @@
+@use "variables" as var;
+@use "setting" as set;
+@use "utility";
+
+.c-wrapper {
+  width: 1080px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 4%;
+}
+
+.c-btn--l {
+  display: block;
+  width: 324px;
+  height: 55px;
+  line-height: 55px;
+  background-color: var.$mainColor;
+  text-align: center;
+  color: #fff;
+
+  &:hover {
+    opacity: .7;
+    transition: 0.5s;
+  }
+}
+
+.c-btnBox {
+  @include set.mediaQuery(tab) {
+    text-align: center;
+  }
+}
+
+.c-btn--s {
+  width: 275px;
+  height: 55px;
+  background-color: var.$mainColor;
+  display: block;
+  margin: 0 16px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 55px;
+  color: #fff;
+}
+
+.c-sectionTitle {
+  text-align: center;
+  margin-bottom: 80px;
+  @include set.mediaQuery(tab){
+    margin-bottom: 48px;
+  }
+}
+
+.c-sectionTitle--en {
+  display: block;
+  font-size: 3.6rem;
+  letter-spacing: 1.2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+
+  @include set.mediaQuery(tab) {
+    font-size: 2rem;
+  }
+}
+
+.c-sectionTitle--ja {
+  font-size: 1.8rem;
+
+  @include set.mediaQuery(tab) {
+    font-size: 1.4rem;
+  }
+}
+
+
+.c-topMainView-Width100 {
+  margin-bottom: 160px;
+  width: 100%;
+
+  @include set.mediaQuery(tab) {
+    margin-bottom: 96px;
+  }
+}
+
+.c-featureTitle--en {
+  color: var.$mainColor;
+  margin-bottom: 8px;
+  display: block;
+  font-family: "Lato", sans-serif;
+}
+
+.c-featureTitle--ja {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+
+.c-productCaption02 {
+  display: block;
+  margin-bottom: 24px;
+}
+
+
+.c-mainVisual--l {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.c-mainVisual--s{
+object-fit: cover;
+}
+
+.c-mainVisual--box {
+  margin-top: 80px;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 160px;
+  @include set.mediaQuery(tab){
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 96px;
+  }
+}
